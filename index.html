@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>DINING ON THE LAKE</title>
+</head>
+
+<body>
+  <nav class="flex pt-10  pb-12 md:pb-24 px-10 sm:px-20 justify-between items-center">
+    <div>
+      <a href="#" class="text-5xl font-bold">
+        MC
+      </a>
+    </div>
+    <!-- menu -->
+    <div class="text-md hidden space-x-8 font-semibold text-white md:flex">
+      <a href="#home" class="text-light-black hover:text-light-red text-lg">Home</a>
+      <a href="#menu-items" class="text-light-black hover:text-light-red text-lg">Menu</a>
+      <a href="#delivery" class="text-light-black hover:text-light-red text-lg">Services</a>
+      <a href="#newsLetter" class="text-light-black hover:text-light-red text-lg">Newsletter</a>
+    </div>
+    <!-- hamburger menu -->
+    <button id="menu-btn" class="hamburger block focus:outline-none md:hidden">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    <!-- mobile-menu -->
+    <div
+      class="absolute left-6 right-6 top-28 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center z-20"
+      id="menu">
+      <a href="#home" class="text-light-black  text-lg font-semibold">Home</a>
+      <a href="#menu-items" class="text-light-black  text-lg font-semibold">Menu</a>
+      <a href="#delivery" class="text-light-black  text-lg font-semibold">Services</a>
+      <a href="#newsLetter" class="text-light-black text-lg font-semibold">Newsletter</a>
+    </div>
+  </nav>
+  <main class="container mx-auto" id="home">
+    <!-- hero -->
+    <div class="flex flex-col gap-80 px-16 py-28 md:flex-row md:gap-12">
+      <div class="flex-1 relative z-10">
+        <h1 class="text-5xl font-semibold text-light-black lg:text-7xl" data-aos="fade-right">
+          <span class="mb-1 block text-light-red">Dining</span>On The Lake
+        </h1>
+        <p class="mt-8 mb-12 text-lg leading-normal text-light-black text-opacity-70 lg:text-xl">
+          Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit
+          gravida. Vulputate sapien nec sagittis aliquam malesuada bibendum.
+        </p>
+        <a href="#" class="btn hover:bg-light-black">view
+          menu</a>
+      </div>
+      <!--  -->
+      <div class="relative flex-1">
+        <!-- shape -->
+        <div>
+          <img src="./images/Screenshot_2022-06-03_033511-removebg-preview.png" alt=""
+            class="absolute top-1/2 left-1/2 z-10 -translate-y-1/2 -translate-x-1/2 scale-125 xs:scale-100 sm:scale-110 xl:scale-105" />
+        </div>
+        <!-- img -->
+        <div
+          class="absolute left-[35%] top-[30%] z-20 h-64 w-64 -translate-y-[72%] -translate-x-[32%] scale-90 overflow-hidden rounded-[50%] bg-medium-gray sm:scale-150 md:top-[15%] md:-translate-y-[30%] md:-translate-x-[40%] md:scale-100 lg:top-[20%] lg:h-80 lg:w-80 lg:-translate-x-[33%] xl:top-[15%] xl:h-96 xl:w-96 xl:-translate-x-[30%]">
+          <img src="./images/chef.png" alt="" class="bottom-0 h-full w-full object-cover object-center" />
+          <!-- shape -->
+        </div>
+      </div>
+    </div>
+    <!-- food img grid -->
+    <div class="mt-48 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 lg:mt-20">
+      <!-- 1 -->
+      <div class="overflow-hidden">
+        <img src="./images/jan-nguyen-u9tN9NIJgMc-unsplash.jpg" alt=""
+          class="mx-auto h-72 cursor-pointer object-cover object-center transition duration-500 ease-in hover:scale-110" />
+      </div>
+      <!-- 2 -->
+      <div class="overflow-hidden">
+        <img src="./images/katja-grasinger-4tPjtttythY-unsplash.jpg" alt=""
+          class="mx-auto h-72 cursor-pointer object-cover object-center transition duration-500 ease-in hover:scale-110" />
+      </div>
+      <!-- 3-->
+      <div class="overflow-hidden">
+        <img src="./images/sina-piryae-bBzjWthTqb8-unsplash (1).jpg" alt=""
+          class="mx-auto h-72 cursor-pointer object-cover object-center transition duration-500 ease-in hover:scale-110" />
+      </div>
+      <!-- 4 -->
+      <div class="overflow-hidden">
+        <img src="./images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt=""
+          class="mx-auto h-72 cursor-pointer object-cover object-center transition duration-500 ease-in hover:scale-110" />
+      </div>
+    </div>
+    <!-- breakfast section -->
+    <div class="my-20 bg-very-light-gray py-64 overflow-hidden md:py-36 flex justify-center items-center relative ">
+
+      <!-- brekfast content -->
+      <div
+        class="bg-white p-6 lg:p-8 max-w-xs bg-opacity-95 absolute z-20 md:right-[60%] md:top-[30%] top-[45%] right-[35%]"
+        data-aos="fade-right" data-aos-delay="800">
+        <h3 class="text-3xl font-semibold font-sans">Breakfast</h3>
+        <p class="mt-6 mb-10 md:text-lg lg:text-xl text-medium-gray">Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <a href="#"
+          class=" hover:bg-light-black bg-light-red text-white text-lg uppercase py-2 px-4 font-semibold rounded-full">learn
+          more</a>
+      </div>
+      <div class="relative z-10">
+        <img src="./images/joseph-gonzalez-Wns3U-oVoLA-unsplash.jpg"
+          class="h-64 md:h-80 lg:h-96 z-20 relative block object-cover object-center" data-aos="fade-left"
+          data-aos-delay="700">
+        <!-- circle -->
+        <div class="absolute h-24 w-24 md:w-40 md:h-40 rounded-full bg-light-red -top-[20%] -right-[20%] z-10"
+          data-aos="fade-down" data-aos-delay="600"></div>
+      </div>
+
+    </div>
+    <!-- menu -->
+    <section class="bg-light-black my-20 py-12" id="menu-items">
+      <h2 class="text-5xl underline text-center text-light-red mb-8">MENU</h2>
+      <!-- img -->
+      <div class="h-72 w-full">
+        <img src="./images/christine-isakzhanova-55hOS2dRBPI-unsplash.jpg" alt=""
+          class="h-full object-cover  object-center w-full">
+      </div>
+      <!-- menu-cards -->
+      <div class="flex flex-col md:flex-row gap-6 mx-auto pt-12 px-12">
+        <!-- 1 -->
+        <div class="bg-very-light-black p-6 text-white">
+          <div class="text-2xl font-semibold flex  items-center"><span
+              class="bg-light-red text-white w-16 h-16 flex items-center justify-center rounded-full italic text-3xl mr-2">01</span>Starter
+          </div>
+          <p class="text-very-light-gray my-4">Seafood Salad with Shrimps, Calamari and Mussels, with Lemon and
+            Extra-Virgin Olive Oil and Baked Bread</p>
+          <a href="#" class="text-xl underline hover:text-very-light-gray uppercase">Learn more</a>
+        </div>
+        <!-- 2 -->
+        <div class="bg-very-light-black p-6 text-white">
+          <div class="text-2xl font-semibold flex  items-center"><span
+              class="bg-light-red text-white w-16 h-16 flex mr-2 items-center italic text-3xl  justify-center rounded-full">02</span>Entree
+          </div>
+          <p class="text-very-light-gray my-4">Parmesan Crusted Halibut
+            Parmesan Truffle Risotto
+            Seasonal Vegetables and Baked Potatoes
+            entree</p>
+          <a href="#" class="text-xl underline hover:text-very-light-gray uppercase">Learn more</a>
+        </div>
+        <!-- 3-->
+        <div class="bg-very-light-black p-6 text-white">
+          <div class="text-2xl font-semibold flex  items-center"><span
+              class="bg-light-red mr-2 italic text-3xl text-white w-16 h-16 flex items-center justify-center rounded-full">03</span>Desserts
+          </div>
+          <p class="text-very-light-gray my-4">Vanilla Cake with Fresh Berries
+            Semolina Almond-Anis Tea Cake
+            Milk Chocolate Mousse and Passion Fruit
+            dessert</p>
+          <a href="#" class="text-xl underline hover:text-very-light-gray uppercase">Learn more</a>
+        </div>
+      </div>
+    </section>
+    <!-- delivery -->
+    <div class="my-20 bg-very-light-gray pt-24 pb-72 xs:pb-60" id="delivery">
+      <!-- circle -->
+      <div class=" h-24 w-24 mb-12 md:w-40 md:h-40 rounded-full bg-light-red ml-auto mr-8 md:mr-16"
+        data-aos="fade-down"></div>
+      <div class="relative ml-[10%] h-96 pr-12">
+        <img src="./images/arantxa-aniorte-pHzyr-doErc-unsplash.jpg" alt=""
+          class="h-full w-9/12 object-cover object-center relative z-20  mx-auto block" data-aos="fade-right">
+        <div class="absolute bg-light-red w-full h-80 top-1/4 z-10 ml-[5%] right-0" data-aos="fade-left"></div>
+        <!-- card -->
+        <div class="bg-white px-8 py-12 absolute z-30 top-1/2 right-[10%] bg-opacity-95 w-full md:max-w-xl"
+          data-aos="fade-up">
+          <h3 class="text-3xl font-semibold font-sans">Delivery services</h3>
+          <p class="mt-6 mb-10 md:text-lg lg:text-xl text-medium-gray">Id faucibus nisl tincidunt eget nullam non nisi.
+            Amet dictum sit amet justo donec enim diam vulputate ut. Non quam lacus suspendisse faucibus interdum. Ac ut
+            consequat semper viverra nam. Auctor augue mauris augue neque gravida in fermentum </p>
+          <a href="#"
+            class=" hover:bg-light-black bg-light-red text-white text-lg uppercase py-2 px-4 font-semibold rounded-full">learn
+            more</a>
+        </div>
+      </div>
+    </div>
+    <!-- fast food -->
+    <div class="flex bg-[#101010] items-center justify-center h-[500px]">
+      <div class="w-2/3 md:w-1/2 text-white font-semibold px-4 md:px-16 ">
+        <h4 class="text-lg lg:text-2xl mb-2 tracking-widest">MUST-TRY AMERICAN FOODS</h4>
+        <h2 class="text-5xl lg:text-7xl font-bold tracking-wide mb-12" data-aos="fade-right">Fast Food</h2>
+        <a href="#"
+          class="bg-light-red text-white text-lg uppercase py-2 px-4 font-semibold rounded-full hover:bg-red-600 ">view
+          menu</a>
+      </div>
+      <div class="w-1/3 md:w-1/2 h-full">
+        <img src="./images/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg" alt=""
+          class="object-cover object-center h-full w-full ">
+      </div>
+    </div>
+    <!-- slider -->
+    <div class="mb-20 bg-very-light-gray pt-12 pb-60 xs:py-60 overflow-hidden">
+      <div class="flex max-w-sm md:max-w-2xl mx-auto flex-col md:flex-row gap-6 md:gap-0">
+        <!-- 1 -->
+        <div class="relative right-[10%] md:right-0">
+          <img src="./images/likemeat-CbNAuxSZTFo-unsplash.jpg" alt=""
+            class="relative rounded-full object-cover object-center h-72 w-72 md:h-80 md:w-80 md:-top-[30%] md:left-[15%] z-20 mx-auto ">
+          <img src="./images/food-photographer-phototastyfood-ru-E94j3rMcxlw-unsplash.jpg" alt=""
+            class="absolute md:w-40 md:h-40 h-32 w-32 rounded-full  border-white border-8 md:bottom-1/4 md:left-0 z-30 -bottom-1/4 right-1/2">
+        </div>
+        <!-- 2 -->
+        <div class="relative">
+          <!-- circle -->
+          <div class="w-40 h-40 rounded-full bg-light-red absolute bottom-full -right-20 -top-20"></div>
+          <!-- slider content -->
+          <div class="bg-white px-4 py-12 md:p-8 relative z-10">
+            <!-- 1st slide -->
+            <div class="mySlides flex flex-col space-y-6">
+              <img src="./images/icons/burger-solid.svg" alt="piza" class="w-16 h-16 mx-auto">
+              <h4 class="text-3xl font-semibold text-center">Burgers</h3>
+                <p class="text-light-gray max-w-xs mx-auto mb-8">
+                  2 krunch fillets with spicy mayo vietnamese sauce,cheese and jalpenos all bundled together in a corn
+                  meal bun
+                </p>
+                <a href="#"
+                  class="uppercase text-lg border border-light-red py-2  mx-auto rounded-full block w-40 text-center">view
+                  menu</a>
+            </div>
+            <!-- 2nd slide -->
+            <div class="mySlides flex-col space-y-6 flex">
+              <img src="./images/icons/pizza-slice-solid.svg" alt="" class="w-16 h-16 mx-auto">
+              <h4 class="text-3xl font-semibold text-center">Pizza</h3>
+                <p class="text-light-gray max-w-xs mx-auto mb-8">
+                  delicious pizza with beef pepperoni,cheese,crispy onions and our signature bbq sauce
+                </p>
+                <a href="#"
+                  class="uppercase text-lg border border-light-red py-2  mx-auto rounded-full block w-40 text-center">view
+                  menu</a>
+            </div>
+
+          </div>
+          <!-- line circle -->
+          <img src="./images/Screenshot_2022-06-03_033224-removebg-preview.png" alt=""
+            class="w-48 h-44 -left-24 -bottom-24  rounded-full absolute ">
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- footer -->
+  <footer class="bg-light-black p-12" id="newsLetter">
+    <h3 class="text-4xl text-white text-center font-bold tracking-wide">SUBSCRIBE</h3>
+    <p class="text-very-light-gray text-center tracking-wider text-xl mt-2">to the newsletters and content update</p>
+    <div class="md:max-w-xl mx-auto w-full flex flex-col items-center gap-6">
+      <!-- form -->
+      <form>
+        <div class="flex flex-col md:flex-row my-12  gap-8 md:gap-4">
+          <input type="email"
+            class="border-x-0 border-t-0 border-b-stroke bg-transparent block w-full border-b-2  text-white focus:ring-pink-100 focus:ring-offset-1 focus:border-b-stroke "
+            placeholder="Enter your email address">
+          <a href="#"
+            class="md:w-40 hover:bg-white hover:text-black tracking-widest text-lg bg-light-red py-2 text-center text-white font-semibold w-full">SUBMIT</a>
+        </div>
+      </form>
+      <!-- location -->
+      <div class="flex flex-col gap-6">
+        <h4 class="text-2xl text-white font-semibold text-center">LOCATION</h4>
+        <address class="text-very-light-gray text-xl">28 Jackson Blvd Ste 1020 <br> Chicago
+          IL 60604-2340</address>
+      </div>
+      <!-- social -->
+      <!-- location -->
+      <div class="flex flex-col gap-6">
+        <h4 class="text-2xl text-white font-semibold text-center uppercase">Follow us</h4>
+        <div class="flex gap-4">
+          <!-- 1 -->
+          <div class="w-10 h-10 rounded-full grid place-content-center bg-white">
+            <img src="./images/icons/facebook-f-brands.svg" alt="" class="w-6 h-6">
+          </div>
+          <!-- 2 -->
+          <div class="w-10 h-10 rounded-full grid place-content-center bg-white">
+            <img src="./images/icons/twitter-brands.svg" alt="" class="w-6 h-6">
+          </div>
+          <!-- 3 -->
+          <div class="w-10 h-10 rounded-full grid place-content-center bg-white">
+            <img src="./images/icons/instagram-brands.svg" alt="" class="w-6 h-6">
+          </div>
+          <!-- 4 -->
+          <div class="w-10 h-10 rounded-full grid place-content-center bg-white">
+            <img src="./images/icons/google-plus-g-brands.svg" alt="" class="w-6 h-6">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        delay: 300, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+      }
+    );
+  </script>
+  <script src="./js/index.js">
+  </script>
+</body>
+
+</html>
