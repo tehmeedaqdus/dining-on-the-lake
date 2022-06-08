@@ -1,3 +1,18 @@
+
+
+
+
+function stopSliding(e) {
+  slider.onpointermove = null;
+  slider.releasePointerCapture(e.pointerId);
+}
+
+
+
+
+const slider = document.getElementById('slider');
+slider.onpointerup = stopSliding;
+
 // hamburger menu
 const btn = document.getElementById('menu-btn')
 const nav = document.getElementById('menu')
